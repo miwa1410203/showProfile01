@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自己紹介ページ</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--ここにコンテンツを追加していきます-->
+  
+    <!--ヘッダー部分-->
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#profile">プロフィール</a></li>
+            <li><a href="#skills">スキル</a></li>
+            <li><a href="#hobbies">趣味・特技</a></li>
+            <li><a href="#history">経歴</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--プロフィールセクション-->
+    <section id="profile" class="profile">
+      <div class="container">
+        <h1>私の自己紹介</h1>
+        <div class="profile-content">
+          <div class="profile-image">
+            <img src="images/profile.jpg" alt="プロフィール画像" />
+          </div>
+          <div class="profile-text">
+            <h2>愛地　太郎</h2>
+            <p class="profile-title">社内SE</p>
+            <p class="profile-description">
+              はじめまして！私は愛知県にある運輸関係の会社において社内SEをしています。
+              社内システムがGWSに変更されたことをきっかけにHTML/CSS、JavaScriptを本格的に
+              学び始めました。現在は、社内の業務効率化を目指して日々勉強を重ねています。
+              HTML/CSS、JavaScriptを学習して社員への更なるサービスが出来ないか考えています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--スキルセクション-->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">スキル</h2>
+        <div class="skills-container">
+          <div class="skill-item">
+            <div class="skill-name">運行管理者</div>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 50%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">危険物取扱者乙4種</div>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">電気工事士２種</div>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">QC検定２級</div>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--趣味・特技セクション-->
+    <section id="hobbies" class="hobbies">
+      <div class="container">
+        <h2 class="section-title">趣味・特技</h2>
+        <div class="hobbies-container">
+          <div class="hobby-item">
+            <div class="hobby-icon"></div>
+            <h3>ゲーム</h3>
+            <p>factorio等の動作を考えるような工場シミュレーションゲームをするのが好きです。</p>
+          </div>
+          <div class="hobby-item">
+            <div class="hobby-icon"></div>
+            <h3>ウォーキング</h3>
+            <p>平日仕事の終わりに３０分ほどのウォーキングを行っています。</p>
+          </div>
+          <div class="hobby-item">
+            <div class="hobby-icon"></div>
+            <h3>読書</h3>
+            <p>池波正太郎や司馬遼太郎、藤沢周平のような歴史小説が好きです。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--経歴セクション-->
+    <section id="history" class="history">
+      <div class="container">
+        <h2 class="section-title">経歴</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2022年 - 現在</div>
+            <div class="timeline-content">
+              <h3>亜市乃株式会社</h3>
+              <p>
+                社内SEとして、社内システムのインフラ運用・保守業務に従事
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020年 - 2022</div>
+            <div class="timeline-content">
+              <h3>株式会社愛地電設春日井工場</h3>
+              <p>
+                品質管理担当として、客先出荷用の商品の品質管理に従事
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2013年 - 2020</div>
+            <div class="timeline-content">
+              <h3>愛地運輸株式会社</h3>
+              <p>
+                社内SEとして、社内システムのインフラ運用・保守業務に従事
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--お問い合わせフォーム部分-->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">お問い合わせ</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">メッセージ</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">送信する</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>2025 三輪恭裕 All Rights Reserved.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
